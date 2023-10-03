@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Preloader from "./components/Preloader";
+import Services from "./components/Services";
+import Slider from "./components/Slider";
+import About from "./components/About";
+import VolunteerForm from "./components/VolunteerForm";
+import Causes from "./components/Causes";
+import Testemonial from "./components/Testemonial";
+import Event from "./components/Event";
+import Volunteer from "./components/Volunteer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Preloader />
+      <Header />
+      <Slider />
+      <Services />
+      <About />
+      <VolunteerForm />
+      <Causes />
+      <Testemonial />
+      <Event />
+      <Volunteer />
+      <Footer />
+
+      <div className="go-top-area">
+        <div className="go-top-wrap">
+          <div className="go-top-btn-wrap">
+            <div className="go-top go-top-btn">
+              <i className="fa fa-angle-double-up" />
+              <i className="fa fa-angle-double-up" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
