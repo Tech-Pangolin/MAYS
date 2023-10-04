@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Preloader from "./components/Preloader";
 import Services from "./components/Services";
-import Slider from "./components/Slider";
+import Slider from "./components/HeaderSlider";
 import About from "./components/About";
 import VolunteerForm from "./components/VolunteerForm";
 import Causes from "./components/Causes";
@@ -9,14 +9,14 @@ import Testemonial from "./components/Testemonial";
 import Event from "./components/Event";
 import Volunteer from "./components/Volunteer";
 import Footer from "./components/Footer";
+import HeaderSlider from "./components/HeaderSlider";
 
 function App() {
   return (
     <>
-      <Preloader />
+      {/* <Preloader /> */}
       <Header />
-      <Slider />
-      <Services />
+      <HeaderSlider />
       <About />
       <VolunteerForm />
       <Causes />

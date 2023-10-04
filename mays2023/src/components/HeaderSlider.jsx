@@ -1,10 +1,31 @@
-const Slider = () => {
+import Slider from "react-slick"
+import React from "react"
+
+const HeaderSlider = () => {
+
+    const settings = {
+        autoplay: true,
+        autoplaySpeed: 13000,
+        dots: false,
+        fade: true,
+        arrows: false,
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
+    }
+
     return (
         <section
             className="slider_area slider_area_3 bg_cover"
             style={{ backgroundImage: "url(assets/images/omahafountain.jpg)" }}
         >
-            <div className="slider-active_3">
+            <Slider {...settings}>
                 <div className="single_slider_3 d-flex align-items-center">
                     <div className="container">
                         <div className="row">
@@ -29,7 +50,7 @@ const Slider = () => {
                             </div>
                         </div>{" "}
                     </div>{" "}
-                </div>{" "}
+                </div>
                 <div className="single_slider_3 d-flex align-items-center">
                     <div className="container">
                         <div className="row">
@@ -57,8 +78,7 @@ const Slider = () => {
                         {/* row */}
                     </div>{" "}
                     {/* container */}
-                </div>{" "}
-                {/* single slider 3 */}
+                </div>
                 <div className="single_slider_3 d-flex align-items-center">
                     <div className="container">
                         <div className="row">
@@ -87,12 +107,10 @@ const Slider = () => {
                         {/* row */}
                     </div>{" "}
                     {/* container */}
-                </div>{" "}
-                {/* single slider 3 */}
-            </div>{" "}
-            {/* slider active 3 */}
+                </div>
+            </Slider>
         </section>
     )
 }
 
-export default Slider
+export default HeaderSlider
