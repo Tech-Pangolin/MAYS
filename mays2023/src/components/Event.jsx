@@ -1,4 +1,18 @@
+import Slider from "react-slick"
+import React from "react"
+
+
 const Event = () => {
+
+  const eventSliderSettings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,  
+    dots: true,
+    speed: 800,
+    className: 'event_active'
+  } 
+
     return (  <section
         className="event_area_2 pt-130 pb-130 bg_cover"
         style={{ backgroundImage: "url(assets/images/gray-bg.jpg)" }}
@@ -13,14 +27,13 @@ const Event = () => {
               <div className="section_title text-center pb-60">
                 <img src="assets/images/section_icon.png" alt="Icon" />
                 <h3 className="title">Our Latest Events</h3>
-              </div>{" "}
-              {/* section title */}
+              </div>
             </div>
-          </div>{" "}
-          {/* row */}
+          </div>
+
           <div className="row no-gutters justify-content-center">
             <div className="col-lg-10">
-              <div className="event_active">
+              <Slider {...eventSliderSettings}>
                 <div className="single_event_2 d-flex flex-wrap event_color-1">
                   <div className="event_image">
                     <img src="assets/images/camping.jpg" alt="event" />
@@ -49,8 +62,8 @@ const Event = () => {
                       </a>
                     </div>
                   </div>
-                </div>{" "}
-                {/* single event */}
+                </div>
+                
                 <div className="single_event_2 d-flex flex-wrap event_color-2">
                   <div className="event_image">
                     <img src="assets/images/event-2.jpg" alt="event" />
@@ -81,8 +94,8 @@ const Event = () => {
                       </a>
                     </div>
                   </div>
-                </div>{" "}
-                {/* single event */}
+                </div>
+                
                 <div className="single_event_2 d-flex flex-wrap event_color-3">
                   <div className="event_image">
                     <img src="assets/images/event-3.jpg" alt="event" />
@@ -113,15 +126,11 @@ const Event = () => {
                       </a>
                     </div>
                   </div>
-                </div>{" "}
-                {/* single event */}
-              </div>{" "}
-              {/* event active */}
+                </div>
+              </Slider>
             </div>
-          </div>{" "}
-          {/* row */}
-        </div>{" "}
-        {/* container */}
+          </div>
+        </div>
         <div
           className="event_shape_2"
           style={{ backgroundImage: "url(assets/images/shape/shape-1.png)" }}
