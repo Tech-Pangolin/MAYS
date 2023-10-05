@@ -17,6 +17,7 @@ function App() {
       {/* <Preloader /> */}
       <Header />
       <HeaderSlider />
+      <Services />  
       <About />
       <VolunteerForm />
       <Causes />
