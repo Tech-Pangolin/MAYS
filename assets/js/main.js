@@ -326,15 +326,15 @@ $(function() {
     
     ///===== Progress Bar
 
-    if ($('.progress_line').length) {
-        $('.progress_line').appear(function () {
-            var el = $(this);
-            var percent = el.data('width');
-            $(el).css('width', percent + '%');
-        }, {
-            accY: 0
-        });
-    }
+    // if ($('.progress_line').length) {
+    //     $('.progress_line').appear(function () {
+    //         var el = $(this);
+    //         var percent = el.data('width');
+    //         $(el).css('width', percent + '%');
+    //     }, {
+    //         accY: 0
+    //     });
+    // }
     
     
     // Go to Top

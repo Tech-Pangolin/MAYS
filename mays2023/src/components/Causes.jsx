@@ -1,4 +1,17 @@
+import $ from "jquery";
+import React, { useEffect } from "react";
+
 const Causes = () => {
+
+    useEffect(() => {
+        if ($('.progress_line').length) {
+          $('.progress_line').each(function() {
+            let width = $(this).data('width');
+            $(this).css('width', width + '%');
+          });
+      }
+    }, []);
+
     return (
         <section className="causes_area pt-180 pb-130">
         <div className="container">
