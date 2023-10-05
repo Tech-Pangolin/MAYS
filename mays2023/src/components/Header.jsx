@@ -30,7 +30,7 @@ const Header = () => {
             <div className="container">
                 <nav className="navbar navbar-expand-lg ">
                     <a className="navbar-brand" href="index.html">
-                        <img src="assets/images/mayslogo.png" alt="logo" height="85" />
+                        <img src="assets/images/mayslogo-orig.png" alt="logo" height="85" />
                     </a> 
 
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
