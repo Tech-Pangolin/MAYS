@@ -164,7 +164,7 @@
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="slider_content_3">
-                                <h2 class="title" data-animation="fadeInUp" data-delay="0.4s">We’ve funded <br> 44,007 Dollars over <br> 10 million peoples </h2>
+                                <h2 class="title" data-animation="fadeInUp" data-delay="0.4s">Community-driven <br> support for <br> youth success </h2>
                                 <a href="#" class="main-btn main-btn-2" data-animation="fadeInUp" data-delay="0.8s">Learn More</a>
                             </div> <!-- slider content -->
                         </div>
@@ -278,7 +278,7 @@
                 <div class="col-lg-6">
                     <div class="about_content_2 mt-45">
                         <h4 class="about_title">We've kept 68 kids out of jails since 2013</h4>
-                        <p>Headquartered in Omaha, Nebraska, the Mays Foundation has built a recognizable reputation for 
+                        <p>Headquartered in Omaha, Nebraska, the MAYS Foundation has built a recognizable reputation for 
                             providing youth with the opportunity to learn and grow in a safe, supportive environment, free from 
                             the bondage of the streets.</p>
                         
@@ -322,34 +322,34 @@
                 <div class="col-lg-6">
                     <div class="volunteer_form">
                         <h4 class="volunteer_title">Get Involved</h4>
-                        <form action="#">
+                        <form id="getInvolved">
                             <div class="single_form">
-                                <select name="enrollment" id="enrollment-select">
+                                <select name="reason" id="reason">
                                     <option value="">Select your reason for reaching out</option>
-                                    <option value="">Enroll my child in programming</option>
-                                    <option value="">Volunteer my time or services</option>
-                                    <option value="">Initiate a financial contribution</option>
-                                    <option value="">Enroll my business as a partner</option>
-                                    <option value="">Other inquiry</option>
+                                    <option value="Enrollment">Enroll my child in programming</option>
+                                    <option value="Volunteer">Volunteer my time or services</option>
+                                    <option value="Financial Contribution">Initiate a financial contribution</option>
+                                    <option value="Partner">Enroll my business as a partner</option>
+                                    <option value="Other">Other inquiry</option>
                                 </select>
                             </div> <!-- single form -->
                             <div class="single_form">
-                                <input type="text" placeholder="Full Name">
+                                <input type="text" placeholder="Full Name" name="name" id="name">
                             </div> <!-- single form -->
                             <div class="single_form">
-                                <input type="email" placeholder="Email">
+                                <input type="email" placeholder="Email" name="email" id="email">
                             </div> <!-- single form -->
                             <div class="single_form">
-                                <input type="text" placeholder="Phone">
+                                <input type="text" placeholder="Phone" name="phone" id="phone">
                             </div> <!-- single form -->
                             <div class="single_form">
-                                <input type="text" placeholder="Zip Code">
+                                <input type="text" placeholder="Zip Code" name="zip" id="zip">
                             </div> <!-- single form -->
                             <div class="single_form">
-                                <textarea placeholder="Anything you'd like us to know"></textarea>
+                                <textarea placeholder="Anything you'd like us to know" name="notes" id="notes"></textarea>
                             </div> <!-- single form -->
                             <div class="single_form">
-                                <button class="main-btn main-btn-2">Submit</button>
+                                <button type="submit" class="main-btn main-btn-2">Submit</button>
                             </div> <!-- single form -->
                         </form>
                     </div> <!-- volunteer form -->
@@ -728,7 +728,7 @@
                                 <img src="assets/images/mayslogo-trans.png" alt="Logo">
                             </a>
                             
-                            <p>The Mays Foundation has built a recognizable reputation for providing youth with the opportunity to learn and grow in a safe, supportive environment, free from the bondage of the streets.</p>
+                            <p>The MAYS Foundation has built a recognizable reputation for providing youth with the opportunity to learn and grow in a safe, supportive environment, free from the bondage of the streets.</p>
                             
                             <div class="footer_contact mt-20">
                                 <h5 class="footer_title">Contact us</h5>
@@ -808,7 +808,12 @@
  
 
 
-
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('duRbrchoZ-jc_t-X4')
+  </script>
 
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
